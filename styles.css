@@ -11,7 +11,7 @@ html, body {
   width: 100%;
 }
 
-html {
+body {
   background: -webkit-linear-gradient( 90deg, #05996E, #A4EDD8, white 50% );
   background: -moz-linear-gradient( 90deg, #05996E, #A4EDD8, white 50% );
   background: linear-gradient( 0deg, #05996E, #A4EDD8, white 50% );
@@ -130,6 +130,7 @@ footer p {
 
   .subtitle {
     font-size: 2em;
+    font-weight: 400;
   }
 
   .title-materials {
