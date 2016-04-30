@@ -20,7 +20,7 @@ html {
   height: 100%;
 }
 
-p {
+p, li {
   font-family: 'Droid Sans', sans-serif;
   font-size: 1.5em;
 }
@@ -34,6 +34,15 @@ p a {
   color: #D63E6A;
 }
 
+li a:hover {
+  color: #D63E6A;
+}
+
+li {
+  list-style-type: square;
+  margin-bottom: 0.5em;
+}
+
 footer {
   width: 100%;
   text-align: center;
@@ -44,13 +53,23 @@ footer p {
   margin: 0;
 }
 
-.title {
+.title, .title-materials {
   font-family: 'Londrina Outline', cursive;
   font-size: 5em;
   margin-top: .5em;
   padding: 0;
   letter-spacing: 2px;
   font-weight: bold;
+}
+
+.subtitle {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+.note {
+  font-size: 1em;
 }
 
 .flex-container {
@@ -68,7 +87,7 @@ footer p {
 
 .flexitem-fill {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
@@ -97,12 +116,24 @@ footer p {
 
 
 @media (max-width: 667px) {
-  p {
+  p, li {
     font-size: 1.2em;
+  }
+
+  ul {
+    padding-left: 1.5em;
   }
 
   .title {
     font-size: 4em;
+  }
+
+  .subtitle {
+    font-size: 2em;
+  }
+
+  .title-materials {
+    font-size: 3em;
   }
 
   .flex-container {
