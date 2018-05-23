@@ -20,7 +20,19 @@ body {
   height: 100%;
 }
 
-p, li {
+h1, h2 {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+p, li, strong {
   font-family: 'Droid Sans', sans-serif;
   font-size: 1.5em;
 }
@@ -101,19 +113,29 @@ footer p {
   max-width: 60%;
 }
 
-.contact {
+.contact, .impressum {
   font-family: 'Londrina Outline', cursive;
-  font-size: 3em;
   display: inline;
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
-.contact:hover {
+.contact {
+  font-size: 3em;
+}
+
+.impressum {
+  font-size: 1.5em;
+}
+
+.contact:hover, .impressum:hover {
   color: white;
 }
 
+.impressum-container {
+  margin-top: 2em;
+}
 
 @media (max-width: 667px) {
   p, li {
@@ -150,7 +172,7 @@ footer p {
     display: block;
   }
 
-  .contact:hover {
+  .contact:hover, .impressum:hover {
     color: black;
   }
 }
